@@ -1,0 +1,9 @@
+
+
+
+#----Latex----
+*.aux
+*.lof
+*.log
+*.lot
+*.toc

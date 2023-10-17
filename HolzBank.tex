@@ -1,0 +1,69 @@
+\documentclass[
+    oneside, 
+    footinclude=off, 
+    captions=tableheading, 
+    DIV=12;usenames,
+    dvipsnames
+]{scrartcl}
+
+% -----------------------------------------------------------
+% Pakete
+\usepackage{subfiles}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{siunitx}
+
+
+
+\begin{document}
+
+% -----------------------------------------------------------
+% Deckblatteinrichtung
+    \title{SBO - Window bank}
+    \subtitle{}
+    \author{Autors: Tom Folgmann, Arto Steffan.}
+    \date{Oktober 2023}
+    \maketitle
+    \pagenumbering{alph}
+    \thispagestyle{empty}
+    \section*{Introduction}
+        \subfile{Pages/0-Intro.tex}
+
+    \newpage
+%-----------------------------------------------------------
+
+
+% -----------------------------------------------------------
+% Inhaltsvorbereitung
+
+    \tableofcontents
+    \thispagestyle{empty}	
+    \newpage
+    \setcounter{page}{1}
+    \pagenumbering{arabic}
+% -----------------------------------------------------------
+% Link zum Code
+%Das vollständig Code des Projektes befindet sich unter dem Git Repostitory: \url{https://github.com/Tamwyn001/ShootMeToTheMoooon}.
+
+% -----------------------------------------------------------
+% Dokumentkern
+
+\newpage
+\section{List Of Furnitures}
+    \subfile{Pages/1-Furnitures.tex}
+
+\newpage
+\section{Cut the Wood}
+    \subfile{Pages/2-CutWood.tex}
+
+% -----------------------------------------------------------
+% Abspann und Credits
+
+\newpage
+    \listoffigures
+    \listoftables
+
+
+%\includepdf[pages=1-1,scale=0.9,frame=true]{Protokolle/PATH.pdf}
+\end{document}
