@@ -6,7 +6,7 @@ The bench has the following features:
 ![alt text](Pages/Exports/W1.sc.png)
 
 ## Materials
-
+The bench is mainly made of wood. Supporting parts are made of metal. There are ony screws and one nail used to hold the parts together. 
 
 ## Previews
 ![right view](local/preview/_DSC3589.png "Preview 1")
