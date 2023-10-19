@@ -1,0 +1,46 @@
+\begin{tikzpicture}
+    \coordinate (A) at (-2.5,-2.25);
+    \coordinate (B) at (2.5,-2.25);
+    \coordinate (C) at (2.5,2.25);
+    \coordinate (D) at (-2.5,2.25);
+
+    \draw[] (A) -- (B) -- (C) -- (D) -- cycle;
+
+    \coordinate (d) at (0,1.25);
+    \coordinate (2d) at (0,2.5);
+    \coordinate (A1) at ($(A) + (2.5,1.25)$);
+    \coordinate (B1) at ($(B) + (d)$);
+    \coordinate (C1) at ($(B) + (2d)$);
+    \coordinate (D1) at ($(A) + (2.5,2.5)$);
+    \coordinate (E1) at ($(D1) + (0,0)$)
+    \coordinate (E2) at ($(A1) + (0,-1.25)$)
+
+    \draw[dotted] (A1) -- (B1);
+    \draw[dotted] (C1) -- (D1);
+    \draw[dotted] (E1) -- (E2);
+    
+    \coordinate (Am) at ($(A) + (0,-0.3)$);
+    \coordinate (Bm) at ($(B) + (0,-0.3)$);
+    \coordinate (Cm) at ($(C) + (0,0.3)$);
+    \coordinate (Dm) at ($(D) + (0,0.3)$);
+    \coordinate (E1m) at ($(E1) + (0,0.3)$);
+    \coordinate (C1m) at ($(C1) + (0,0.3)$);
+
+    \draw[<->] (Am) -- (Bm) node[pos=0.5,below] {$20\si{\cm}$};
+    \draw[<->] (Cm) -- (Dm) node[pos=0.5,above] {$20\si{\cm}$};
+    \draw[<->] (E1m) -- (C1m) node[pos=0.5,above] {$10\si{\cm}$};
+
+    \coordinate (mA) at ($(A) + (-0.3,0)$);
+    \coordinate (mB) at ($(B) + (0.3,0)$);
+    \coordinate (mC) at ($(C) + (0.3,0)$);
+    \coordinate (mD) at ($(D) + (-0.3,0)$);
+
+    \draw[<->] (mA) -- (mD) node[pos=0.5,left] {$18\si{\cm}$};
+    
+    \coordinate (B1m) at ($(B1) + (0.3,0)$);
+    \coordinate (C1m) at ($(C1) + (0.3,0)$);
+
+    \draw[<->] (B1m) -- (C1m) node[pos=0.5,right] {$5\si{\cm}$};
+    \draw[<->] (mB) -- (B1m) node[pos=0.5,right] {$5\si{\cm}$};
+    \draw[<->] (mC) -- (C1m) node[pos=0.5,right] {$8\si{\cm}$};
+\end{tikzpicture}
