@@ -1,5 +1,5 @@
 \documentclass[
-    oneside, 
+    twoside, 
     footinclude=off, 
     captions=tableheading, 
     DIV=12;usenames,
@@ -8,54 +8,52 @@
 
 % -----------------------------------------------------------
 % Pakete
-\usepackage{subfiles}
-\usepackage{caption}
-\usepackage{subcaption}
-\usepackage{graphicx}
-\usepackage{siunitx}
+% \usepackage{subfiles}
+% \usepackage{caption}
+% \usepackage{subcaption}
+% \usepackage{graphicx}
+% \usepackage{siunitx}
+% \usepackage{fancyhdr}
 
-
-
-\begin{document}
+\usepackage{UniLatexPackage}
 
 % -----------------------------------------------------------
-% Deckblatteinrichtung
-    \title{SBO - Window bank}
-    \subtitle{}
-    \author{Autors: Tom Folgmann, Arto Steffan.}
-    \date{Oktober 2023}
+% Einstellungen
+\def\Titel{SBO - Window bank}
+\def\Untertitel{}
+\def\Autoren{Tom Folgmann, Arto Steffan}
+\def\Datum{Oktober 2023}
+
+
+% -----------------------------------------------------------
+% Dokument-config
+\cfoot{\emph{\Titel}}
+\ihead{\Autoren}
+\ohead{\Datum}
+
+\title{\Titel}
+\subtitle{\Untertitel}
+\author{Authored by: \Autoren}
+\date{\Datum}
+
+\begin{document}
     \maketitle
-    \pagenumbering{alph}
-    \thispagestyle{empty}
+    \tableofcontents
     \section*{Introduction}
         \subfile{Pages/0-Intro.tex}
 
     \newpage
-%-----------------------------------------------------------
-
-
-% -----------------------------------------------------------
-% Inhaltsvorbereitung
-
-    \tableofcontents
-    \thispagestyle{empty}	
-    \newpage
-    \setcounter{page}{1}
-    \pagenumbering{arabic}
-% -----------------------------------------------------------
-% Link zum Code
-%Das vollständig Code des Projektes befindet sich unter dem Git Repostitory: \url{https://github.com/Tamwyn001/ShootMeToTheMoooon}.
 
 % -----------------------------------------------------------
 % Dokumentkern
 
 \newpage
-\section{List Of Furnitures}
-    \subfile{Pages/1-Furnitures.tex}
+\section{List Of Materials}
+    \subfile{Pages/1-Materials.tex}
 
 \newpage
-\section{Cut the Wood}
-    \subfile{Pages/2-CutWood.tex}
+\section{Building}
+    \subfile{Pages/2-Building.tex}
 
 % -----------------------------------------------------------
 % Abspann und Credits
