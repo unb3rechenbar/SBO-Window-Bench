@@ -2,7 +2,8 @@
 This project presents a solution for the SB Ost window grills designed and build by us. 
 
 ## Description
-
+The bench has the following features:
+![alt text](Pages/Exports/W1.sc.pdf)
 
 ## Materials
 

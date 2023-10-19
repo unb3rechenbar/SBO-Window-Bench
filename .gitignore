@@ -7,3 +7,6 @@ local/
 *.log
 *.lot
 *.toc
+*.dvi
+*.out
+*.ps

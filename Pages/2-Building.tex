@@ -10,55 +10,7 @@
     We will later use the rest of the wood to cut additional pieces. For reference we will call the two pieces W1.1 and W1.2.
     \begin{figure}[H]
         \centering
-        \begin{tikzpicture}
-            \coordinate (A) at (-6.725,-1.9);
-            \coordinate (B) at (6.725,-1.9);
-            \coordinate (C) at (6.725,1.9);
-            \coordinate (D) at (-6.725,1.9);
-
-            \coordinate (C1) at (-6.725,0.1);
-            \coordinate (C2) at (-4.725,0.1);
-            \coordinate (C3) at (-4.725,1.9);
-
-            \coordinate (D1) at (6.725,0.1);
-            \coordinate (D2) at (4.725,0.1);
-            \coordinate (D3) at (4.725,1.9);
-
-            \draw[] (A) -- (B) -- (C) -- (D) -- cycle;
-            \draw[] (C1) -- (C2) -- (C3);
-            \draw[] (D1) -- (D2) -- (D3);
-
-            \coordinate (Am) at ($(A) + (0,-0.3)$);
-            \coordinate (Bm) at ($(B) + (0,-0.3)$);
-            \coordinate (Cm) at ($(C) + (0,0.3)$);
-            \coordinate (Dm) at ($(D) + (0,0.3)$);
-
-            \coordinate (mA) at ($(A) + (-0.3,0)$);
-            \coordinate (mB) at ($(B) + (0.3,0)$);
-            \coordinate (mC) at ($(C) + (0.3,0)$);
-            \coordinate (mD) at ($(D) + (-0.3,0)$);
-
-            \coordinate (C1m) at ($(C1) + (0,-0.3)$);
-            \coordinate (C2m) at ($(C2) + (0,-0.3)$);
-            \coordinate (C22m) at ($(C2) + (0.3,0)$);
-            \coordinate (C3m) at ($(C3) + (0.3,0)$);
-
-            \coordinate (D1m) at ($(D1) + (0,-0.3)$);
-            \coordinate (D2m) at ($(D2) + (0,-0.3)$);
-            \coordinate (D22m) at ($(D2) + (-0.3,0)$);
-            \coordinate (D3m) at ($(D3) + (-0.3,0)$);
-
-            \draw[<->] (Am) -- (Bm) node[pos=0.5,below] {$134.5\si{\cm}$};
-            \draw[<->] (Cm) -- (Dm) node[pos=0.5,above] {$134.5\si{\cm}$};
-
-            \draw[<->] (mA) -- (mD) node[pos=0.5,left] {$38\si{\cm}$};
-            \draw[<->] (mB) -- (mC) node[pos=0.5,right] {$38\si{\cm}$};
-
-            \draw[<->] (C1m) -- (C2m) node[pos=0.5,below] {$20\si{\cm}$};
-            \draw[<->] (C22m) -- (C3m) node[pos=0.5,right] {$18\si{\cm}$};
-            \draw[<->] (D22m) -- (D3m) node[pos=0.5,left] {$18\si{\cm}$};
-            \draw[<->] (D1m) -- (D2m) node[pos=0.5,below] {$20\si{\cm}$};
-        \end{tikzpicture}
+        \input{Graphs/W1.sc.tex}
         \caption{Scale is 1:10.}
     \end{figure}
 
