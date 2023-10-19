@@ -3,7 +3,8 @@ This project presents a solution for the SB Ost window grills designed and build
 
 ## Description
 The bench has the following features:
-![alt text](Pages/Exports/W1.sc.png)
+![alt text](Pages/Exports/W1.sc/W1.sc.png)
+
 
 ## Materials
 The bench is mainly made of wood. Supporting parts are made of metal. There are ony screws and one nail used to hold the parts together. 
